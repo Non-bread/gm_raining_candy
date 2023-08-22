@@ -1,9 +1,12 @@
 /// @description 
 
-currFullness = global.score / maxFullness * 100;
+currFullness = global.score;
 
-image_xscale = currFullness / 100;
-
+if(currFullness <= maxFullness) {
+	image_xscale = currFullness / maxFullness * 3;
+} else {
+	image_xscale = 3;
+}
 
 
 
